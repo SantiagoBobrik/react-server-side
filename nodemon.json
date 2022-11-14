@@ -1,0 +1,11 @@
+{
+    "verbose": true,
+    "ignore": [
+        "mocks/**/*.json",
+        "reports/**/*",
+        "coverage/**/*",
+        "*.log"
+    ],
+    "ext": "js, jsx, ts, tsx",
+    "exec": "node --inspect -r ts-node/register ./src/server/index.tsx"
+}

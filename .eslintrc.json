@@ -1,0 +1,56 @@
+{
+    "extends": [
+        "eslint:recommended",
+        "plugin:@typescript-eslint/recommended"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "plugins": [
+        "@typescript-eslint"
+    ],
+    "root": true,
+    "rules": {
+        "no-multiple-empty-lines": [
+            "error",
+            {
+                "max": 1,
+                "maxEOF": 1,
+                "maxBOF": 1
+            }
+        ],
+        "max-len": [
+            "warn",
+            120,
+            2,
+            {
+                "ignoreUrls": true,
+                "ignoreComments": false,
+                "ignoreStrings": true
+            }
+        ],
+        "spaced-comment": [
+            "error",
+            "always",
+            {
+                "markers": [
+                    "/"
+                ]
+            }
+        ],
+        "no-unused-expressions": "off",
+        "no-use-before-define": "off",
+        "react/prop-types": "off",
+        "@typescript-eslint/no-non-null-assertion": "off",
+        "@typescript-eslint/no-unused-expressions": [
+            "error"
+        ],
+        "@typescript-eslint/no-use-before-define": [
+            "error"
+        ]
+    },
+    "ignorePatterns": [
+        "build",
+        "build-server",
+        "public",
+        "webpack.config.js"
+    ]
+}

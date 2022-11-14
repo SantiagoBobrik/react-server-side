@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "outDir": "build-server",
+    "moduleResolution": "node",
+    "module": "commonjs",
+    "target": "es5",
+    "jsx": "react-jsx",
+    "sourceMap": true,
+    "strict": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+  }
+}
